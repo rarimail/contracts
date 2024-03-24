@@ -18,11 +18,15 @@ interface ISBTIdentityVerifier is IBaseVerifier {
         uint256 tokenID
     );
 
-    function proveIdentity(ProveIdentityParams calldata proveIdentityParams_) external;
+    function proveIdentity(
+        ProveIdentityParams calldata proveIdentityParams_,
+        uint256 messageHash
+    ) external;
 
     function transitStateAndProveIdentity(
         ProveIdentityParams calldata proveIdentityParams_,
-        TransitStateParams calldata transitStateParams_
+        TransitStateParams calldata transitStateParams_,
+        uint256 messageHash
     ) external;
 
     function addressToIdentityId(address senderAddr_) external view returns (uint256);

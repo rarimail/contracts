@@ -95,7 +95,18 @@ const config: HardhatUserConfig = {
       polygon: `${process.env.POLYGONSCAN_KEY}`,
       avalanche: `${process.env.AVALANCHE_KEY}`,
       bsc: `${process.env.BSCSCAN_KEY}`,
+      q: "abc",
     },
+    customChains: [
+      {
+        network: "q",
+        chainId: 35443,
+        urls: {
+          apiURL: "https://explorer.qtestnet.org/api",
+          browserURL: "https://explorer.qtestnet.org",
+        },
+      },
+    ],
   },
   migrate: {
     pathToMigrations: "./deploy/",

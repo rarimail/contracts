@@ -10,16 +10,16 @@
       "signer": "0x038D006846a3e203738cF80A02418e124203beb2",
       "sourceStateContract": "0x753a8678c85d5fb70A97CFaE37c84CE2fD67EDE8",
       "sourceChainName": "Rarimo",
-      "chainName": "Qtestnet"
+      "chainName": "Sepolia"
     },
     "isLightweight": "true"
   },
-  "poseidonFacade": "",
+  "poseidonFacade": "0x6708885d84f120473C571f02A2DFe9e4E31477fd",
   "zkpQueriesStorage": "",
   "identityVerifierInfo": {
     "identityVerifierAddr": "",
     "verifierInitParams": {
-      "verifiedSBTAddr": "",
+      "verifiedSBTAddr": "0xa184884969EAA0F1806189cea0B864773E9d8216",
       "verifiedSBTInfo": {
         "name": "QtestSBT",
         "symbol": "QTSBT",
